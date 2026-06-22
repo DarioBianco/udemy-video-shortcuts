@@ -50,7 +50,7 @@ tell application "Google Chrome"
 				set active tab index of window 1 to TabIndex
 				set found to true
 				tell window 1's active tab to execute javascript "
-		                    var playButton = document.querySelector('button[data-purpose=\"play-button\"]');
+		                    var playButton = document.querySelector('button[data-purpose=\"play-toggle\"]');
               		      var pauseButton = document.querySelector('button[data-purpose=\"pause-button\"]');
 		                    if (playButton) {
               				playButton.click();
